@@ -299,8 +299,50 @@
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
+        <!--Pinterest View Controller-->
+        <scene sceneID="8mr-Ee-2VR">
+            <objects>
+                <viewController storyboardIdentifier="PinterestViewController" id="cKg-0O-xTG" customClass="PinterestViewController" customModule="Extensions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8uc-6L-f9A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ecD-56-uD9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="a8F-KP-bvH" customClass="PinterestLayout" customModule="Extensions" customModuleProvider="target"/>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlB-rQ-j70">
+                                <rect key="frame" x="362" y="64" width="32" height="32"/>
+                                <state key="normal" image="delete-button"/>
+                                <connections>
+                                    <action selector="closeAction:" destination="cKg-0O-xTG" eventType="touchUpInside" id="PGD-yq-D8N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M2M-Uq-AHI" firstAttribute="trailing" secondItem="SlB-rQ-j70" secondAttribute="trailing" constant="20" id="Dtw-U6-uEe"/>
+                            <constraint firstItem="SlB-rQ-j70" firstAttribute="top" secondItem="M2M-Uq-AHI" secondAttribute="top" constant="20" id="J5Z-qH-soU"/>
+                            <constraint firstItem="ecD-56-uD9" firstAttribute="top" secondItem="M2M-Uq-AHI" secondAttribute="top" id="OQL-2I-tCe"/>
+                            <constraint firstItem="ecD-56-uD9" firstAttribute="leading" secondItem="M2M-Uq-AHI" secondAttribute="leading" id="PIO-tA-Huy"/>
+                            <constraint firstItem="M2M-Uq-AHI" firstAttribute="trailing" secondItem="ecD-56-uD9" secondAttribute="trailing" id="SmX-qi-Vvw"/>
+                            <constraint firstItem="M2M-Uq-AHI" firstAttribute="bottom" secondItem="ecD-56-uD9" secondAttribute="bottom" id="yEn-8Q-HXJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M2M-Uq-AHI"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ecD-56-uD9" id="N7C-mI-qsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84s-es-uuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="21"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="delete-button" width="32" height="32"/>
         <image name="img" width="1920" height="1200"/>
     </resources>
 </document>

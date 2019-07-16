@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         for i in 0..<6 {
             photos.append(UIImage(named: String(format: "%d", i))!)
         }
-        collectionView.reloadData()
     }
 
     override func viewDidLayoutSubviews() {
@@ -51,7 +50,8 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegate,UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PinterestViewController")
+        self.present(vc, animated: true, completion: nil)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MyCollectionViewCell

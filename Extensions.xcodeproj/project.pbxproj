@@ -24,6 +24,8 @@
 		FAA86A5922DDEF4D001033F2 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA86A5722DDEF4D001033F2 /* MyCollectionViewCell.swift */; };
 		FAA86A5A22DDEF4D001033F2 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA86A5822DDEF4D001033F2 /* MyCollectionViewCell.xib */; };
 		FAA86A5D22DE082F001033F2 /* CustomGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA86A5C22DE082F001033F2 /* CustomGridLayout.swift */; };
+		FAA86A5F22DE2591001033F2 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA86A5E22DE2591001033F2 /* PinterestLayout.swift */; };
+		FAA86A6122DE25D5001033F2 /* PinterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA86A6022DE25D5001033F2 /* PinterestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		FAA86A5722DDEF4D001033F2 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAA86A5822DDEF4D001033F2 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		FAA86A5C22DE082F001033F2 /* CustomGridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridLayout.swift; sourceTree = "<group>"; };
+		FAA86A5E22DE2591001033F2 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		FAA86A6022DE25D5001033F2 /* PinterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +116,10 @@
 		FA12CCCE22DDD598008757F8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FAA86A6222DE25E1001033F2 /* ViewControllers */,
 				FAA86A5B22DE0818001033F2 /* CustomLayout */,
 				FAA86A5622DDEF35001033F2 /* Cell */,
 				FA12CCCF22DDD598008757F8 /* AppDelegate.swift */,
-				FA12CCD122DDD598008757F8 /* ViewController.swift */,
 				FA12CCD322DDD598008757F8 /* Main.storyboard */,
 				FA12CCD622DDD599008757F8 /* Assets.xcassets */,
 				FA12CCD822DDD599008757F8 /* LaunchScreen.storyboard */,
@@ -151,9 +155,19 @@
 		FAA86A5B22DE0818001033F2 /* CustomLayout */ = {
 			isa = PBXGroup;
 			children = (
+				FAA86A5E22DE2591001033F2 /* PinterestLayout.swift */,
 				FAA86A5C22DE082F001033F2 /* CustomGridLayout.swift */,
 			);
 			path = CustomLayout;
+			sourceTree = "<group>";
+		};
+		FAA86A6222DE25E1001033F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA12CCD122DDD598008757F8 /* ViewController.swift */,
+				FAA86A6022DE25D5001033F2 /* PinterestViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA86A5F22DE2591001033F2 /* PinterestLayout.swift in Sources */,
 				FAA86A5D22DE082F001033F2 /* CustomGridLayout.swift in Sources */,
 				FA12CCD222DDD598008757F8 /* ViewController.swift in Sources */,
+				FAA86A6122DE25D5001033F2 /* PinterestViewController.swift in Sources */,
 				FA12CCD022DDD598008757F8 /* AppDelegate.swift in Sources */,
 				FAA86A5922DDEF4D001033F2 /* MyCollectionViewCell.swift in Sources */,
 			);
